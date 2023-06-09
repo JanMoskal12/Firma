@@ -99,6 +99,7 @@ bool pesel :: getPlec() const
     else
     return false;
 }
+
 void pesel:: setPesel(string numer)
 {
  _numer= "";

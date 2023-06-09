@@ -8,7 +8,7 @@ using namespace std;
 class czlowiek
 {
     public:
-            czlowiek(string imie, string nazwisko, string pesel, string email);
+        czlowiek(string imie, string nazwisko, string pesel, string email);
         string getImie();
         string getNazwisko();
         string getPesel();

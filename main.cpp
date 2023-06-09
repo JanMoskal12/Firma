@@ -1,6 +1,10 @@
 #include <iostream>
 #include <fstream>
-#include "firma.h"
+#include "include/firma.h"
+#include "include/pracownik.h"
+#include "include/pesel.h"
+#include "include/czlowiek.h"
+#include "include/wspolpracownik.h"
 
 using namespace std;
 
@@ -18,7 +22,7 @@ int main()
  //TEST METODY urodziny
  list<czlowiek*> jubilaci = f.urodziny(5,2);
 
- // PRZYKLAD FUNKCJI SPOZA KLASY, KTÓRA WYKORZYSTA LISTÊ
+ // PRZYKLAD FUNKCJI SPOZA KLASY, KTÃ³RA WYKORZYSTA LISTÄ˜
  zapisz_do_pliku(jubilaci,"wiadomosci.txt",f);
 
 }

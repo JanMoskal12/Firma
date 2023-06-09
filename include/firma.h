@@ -5,8 +5,8 @@
 #include <map>
 #include <list>
 #include "czlowiek.h"
-#include <pracownik.h>
-#include <wspolpracownik.h>
+#include "pracownik.h"
+#include "wspolpracownik.h"
 
 using namespace std;
 

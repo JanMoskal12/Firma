@@ -10,7 +10,7 @@ class wspolpracownik : public czlowiek
 {
     public:
 
-            wspolpracownik(string imie, string nazwisko, string pesel, string email, int odpowiedzialny);
+        wspolpracownik(string imie, string nazwisko, string pesel, string email, int odpowiedzialny);
         int getOpiekun();
 
     private:
