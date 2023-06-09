@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1686307028 source:c:\users\jan\desktop\kolosy_z_programowania\firma1\main.cpp
+	<iostream>
+
+1686307556 source:c:\users\jan\desktop\kolosy_z_programowania\firma1\src\czlowiek.cpp
+	"czlowiek.h"
+
+1686307454 c:\users\jan\desktop\kolosy_z_programowania\firma1\include\czlowiek.h
+	<iostream>
+
+1686307397 source:c:\users\jan\desktop\kolosy_z_programowania\firma1\src\firma.cpp
+	"firma.h"
+
+1686312039 c:\users\jan\desktop\kolosy_z_programowania\firma1\include\firma.h
+	<iostream>
+	<map>
+	<list>
+	"czlowiek.h"
+	<pracownik.h>
+	<wspolpracownik.h>
+
+1686310528 source:c:\users\jan\desktop\kolosy_z_programowania\firma1\src\pracownik.cpp
+	"pracownik.h"
+
+1686310519 c:\users\jan\desktop\kolosy_z_programowania\firma1\include\pracownik.h
+	<iostream>
+	"czlowiek.h"
+
+1686309503 source:c:\users\jan\desktop\kolosy_z_programowania\firma1\src\wspolpracownik.cpp
+	"wspolpracownik.h"
+
+1686309531 c:\users\jan\desktop\kolosy_z_programowania\firma1\include\wspolpracownik.h
+	<iostream>
+	"czlowiek.h"
+
+1681663622 source:c:\users\jan\desktop\kolosy_z_programowania\firma1\src\pesel.cpp
+	"pesel.h"
+
+1680879584 c:\users\jan\desktop\kolosy_z_programowania\firma1\include\pesel.h
+	<iostream>
+

@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1681663588 source:c:\users\jan\desktop\codeblocksprograms\pesel\main.cpp
+	<iostream>
+	<vector>
+	"pesel.h"
+
+1681663622 source:c:\users\jan\desktop\codeblocksprograms\pesel\src\pesel.cpp
+	"pesel.h"
+
+1680879584 c:\users\jan\desktop\codeblocksprograms\pesel\include\pesel.h
+	<iostream>
+
