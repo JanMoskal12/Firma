@@ -5,11 +5,29 @@
 #include "include/pesel.h"
 #include "include/czlowiek.h"
 #include "include/wspolpracownik.h"
+#include <fstream>
 
 using namespace std;
 
 void zapisz_do_pliku(const list<czlowiek*> &L, const string &nazwa, const firma &f)
 {
+   
+   ofstream plik(nazwa, std::ofstream::out);
+
+   if (plik.is_open())
+   {
+
+      for (auto x:L)
+      {
+      pesel p(x->getPesel());
+
+         plik <<  x->getEmail() << "    " << p.getData() << " \n ";
+      }
+
+
+   }
+
+   plik.close();
 
 }
 

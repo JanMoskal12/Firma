@@ -2,6 +2,7 @@
 #define CZLOWIEK_H
 
 #include <iostream>
+#include "pesel.h"
 
 using namespace std;
 

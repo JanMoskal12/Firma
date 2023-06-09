@@ -2,6 +2,7 @@
 #include <fstream>
 #include <sstream>
 #include <string>
+#include "pesel.h"
 
 
 void firma :: wczytaj(const string &plik1, const string &plik2)
@@ -92,9 +93,9 @@ list<czlowiek*> firma :: urodziny(int dzien, int miesiac)
   for (auto x:prac)
   {
     
-   _pesel =  x.second.getPesel();
+   pesel peselel(x.second.getPesel());
 
-   if (_pesel != "")
+   if (peselel.getData() != "")
    {
     
      _miesiac = stoi(_pesel.substr(5,2));
@@ -106,12 +107,8 @@ list<czlowiek*> firma :: urodziny(int dzien, int miesiac)
      {
           lista.push_back(&x.second);
      }
-
-
    }
-
   }
-
   return lista;
 
 }
