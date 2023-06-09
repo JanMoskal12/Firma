@@ -1,6 +1,7 @@
 #include "firma.h"
 #include <fstream>
 #include <sstream>
+#include <string>
 
 
 void firma :: wczytaj(const string &plik1, const string &plik2)
@@ -34,7 +35,7 @@ void firma :: wczytaj(const string &plik1, const string &plik2)
 
     pracownik p(imie,nazwisko,pesel,email,id,umowa,id_Szefa);
 
-    prac[id] = p;
+    prac.insert({id,p});
     
 
 
@@ -68,13 +69,49 @@ void firma :: wczytaj(const string &plik1, const string &plik2)
 
  plik.close();
 
+
+
  
 
 
 
 
- plik.close();
+
+}
 
 
+list<czlowiek*> firma :: urodziny(int dzien, int miesiac)
+{
+
+    string _pesel;
+    int _dzien;
+    int _miesiac;
+
+    list<czlowiek*> lista;
+
+  for (auto x:prac)
+  {
+    
+   _pesel =  x.second.getPesel();
+
+   if (_pesel != "")
+   {
+    
+     _miesiac = stoi(_pesel.substr(5,2));
+
+     _dzien = stoi(_pesel.substr(8,2));
+
+
+     if (_miesiac == miesiac && _dzien == dzien)
+     {
+          lista.push_back(&x.second);
+     }
+
+
+   }
+
+  }
+
+  return lista;
 
 }

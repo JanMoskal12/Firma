@@ -17,7 +17,8 @@ class czlowiek
         virtual int getOpiekun() = 0;
 
     private:
-        string _imie, _nazwisko, _pesel, _email;
+        string _imie, _nazwisko, _email;
+        pesel _pesel;
 
 };
 
